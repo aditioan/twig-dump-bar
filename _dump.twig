@@ -59,7 +59,7 @@
     }
     a#dump-trigger {
         display: block;
-        width: 30px;
+        width: 50px;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -91,9 +91,7 @@
                     <a href="#" data-name="{{ key }}">+</a>
                     <div class="dump-key">{{ key }}</div>
                 </div>
-                <div class="dump-value" id="dump-{{ key }}" style="display: none">
-                    {{ dump(value) }}
-                </div>
+                <div class="dump-value" id="dump-{{ key }}" style="display: none"><pre>{{ dump(value) }}</pre></div>
             {% endif %}
         {% endfor %}
     </div>
